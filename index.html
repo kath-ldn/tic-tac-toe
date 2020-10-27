@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="topNav">
+  <h1>Tic Tac Toe</h1>
+  </div>
+<div id="topSubNav">
+  <p>
+    Insert Tic Tac Toe description.
+  </p>
+  </div>
+      <!--If testing AI block out from here-->
+  <div class="form-popup" id="myForm">
+    <form name="userForm" action="" class="form-container">
+    <h2>Your details</h2>
+    <label for="userName">Your Name</label>
+    <input type="text" placeholder="Your Name" name="userName" required>
+    <label for="symbol">Symbol</label>
+    <input type="radio" id="cross" name="symbol" value="X" required>
+    <label for="cross">X</label>
+    <input type="radio" id="nought" name="symbol" value="O" required>
+    <label for="nought">O</label>
+    <button type="submit" class="btn" id="submitButton">Submit</button>
+    <button type="button" id="cancelButton">Close</button>
+    </form>
+  </div>
+
+    <button type="button" id="startButton">Start</button>
+    <button type="button" id="resetButton">Reset</button>
+    <button type="button" id="playAgain">Play Again</button>
+    <!--If testing AI block out to here-->
+<div id ="wholeContainer">
+<div id="dashboard">
+    <div id="playerGrid">
+        <div id="userNameBox" class="playerBox">
+            Your Name
+        </div>
+        <div id="userSymbolBox" class="playerBox">
+            Your Symbol
+        </div>
+        <div id="compNameBox" class="playerBox">
+            Computer
+        </div>
+        <div id="compSymbolBox" class="playerBox">
+            Computer Symbol
+        </div>
+    </div>
+    <div id="messageBoard"></div>
+</div>
+<div id ="gameContainer">
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -8,4 +8,4 @@ For the next version I will:
 -Test & fix bugs - e.g. if close modal without submitting info, can still play
     -stop user being able to click before computer has
 -make the turnclick function less hellish to read
--simplify easy function
+-simplify easy function 

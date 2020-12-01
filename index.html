@@ -18,13 +18,22 @@
   <div class="form-popup" id="myForm">
     <form name="userForm" action="" class="form-container">
     <h2>Your details</h2>
+    <!--Name-->
     <label for="userName">Your Name</label>
     <input type="text" placeholder="Your Name" name="userName" required>
+    <!--Symbol-->
     <label for="symbol">Symbol</label>
     <input type="radio" id="cross" name="symbol" value="X" required>
     <label for="cross">X</label>
     <input type="radio" id="nought" name="symbol" value="O" required>
-    <label for="nought">O</label>
+    <label for="nought">O</label><br><br>
+    <!--Difficulty-->
+    <label for="difficulty">Difficulty</label>
+    <input type="radio" id="easy" name="difficulty" value="easy" required>
+    <label for="Easy">Easy</label>
+    <input type="radio" id="hard" name="difficulty" value="hard" required>
+    <label for="nought">Hard</label>
+    <!--Submit-->
     <button type="submit" class="btn" id="submitButton">Submit</button>
     <button type="button" id="cancelButton">Close</button>
     </form>

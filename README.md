@@ -61,3 +61,4 @@ Copyright (c) 2021 Katharine Turner
 * Meyer-Web CSS Reset
 * GitHub Pages
 * The Odin Project
+* Favicon from [Iconfinder](https://www.iconfinder.com/icons/2191562/add_circle_cross_increase_plus_icon)

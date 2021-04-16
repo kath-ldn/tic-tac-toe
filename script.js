@@ -166,10 +166,10 @@ function userTurn(event){
             }, 500); 
         }
     }   
-    if(win != null & tie === false){
+    if(win != null){
         gameOver(win);
     }
-    if(tie === true){
+    if(win === null & tie === true){
         gameOver("tie");
     }
 };

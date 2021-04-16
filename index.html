@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div id="topNav">
-  <h1>Tic Tac Toe</h1>
-  </div>
-<div id="topSubNav">
-  <p>
-    Insert Tic Tac Toe description.
-  </p>
-  </div>
-      <!--If testing AI block out from here-->
-  <div class="form-popup" id="myForm">
-    <form name="userForm" action="" class="form-container">
-    <h2>Your details</h2>
-    <!--Name-->
-    <label for="userName">Your Name</label>
-    <input type="text" placeholder="Your Name" name="userName" required>
-    <!--Symbol-->
-    <label for="symbol">Symbol</label>
-    <input type="radio" id="cross" name="symbol" value="X" required>
-    <label for="cross">X</label>
-    <input type="radio" id="nought" name="symbol" value="O" required>
-    <label for="nought">O</label><br><br>
-    <!--Difficulty-->
-    <label for="difficulty">Difficulty</label>
-    <input type="radio" id="easy" name="difficulty" value="easy" required>
-    <label for="Easy">Easy</label>
-    <input type="radio" id="hard" name="difficulty" value="hard" required>
-    <label for="nought">Hard</label>
-    <!--Submit-->
-    <button type="submit" class="btn" id="submitButton">Submit</button>
-    <button type="button" id="cancelButton">Close</button>
-    </form>
-  </div>
-
-    <button type="button" id="startButton">Start</button>
-    <button type="button" id="resetButton">Reset</button>
-    <button type="button" id="playAgain">Play Again</button>
-    <!--If testing AI block out to here-->
-<div id ="wholeContainer">
-<div id="dashboard">
-    <div id="playerGrid">
-        <div id="userNameBox" class="playerBox">
-            Your Name
+    <head>
+        <meta charset="utf-8">
+        <title>Tic, Tac Toe</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" type="image/png" href="./assets/icon.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    </head>
+    <body>
+        <nav>
+            <h1>Tic Tac Toe</h1>
+            <div class="nav-container">
+                <button type="button" id="start-button">Start</button>
+                <button type="button" id="play-again" class="disabled-btn">Play Again</button>
+            </div>
+        </nav>
+        <!--Modal for user details and game settings, triggered by 'start'. JS naming convention required -->
+        <div class="form-popup" id="game-form">
+            <form name="userForm" id="userForm" action="" class="form-container">
+                <div>
+                    <label for="userName">Your Name</label>
+                    <input type="text" name="userName" required>
+                </div>
+                <div>
+                    <label for="symbol">Symbol</label>
+                    <input type="radio" id="cross" name="symbol" value="X" required>
+                    <label for="cross" class="grey-text">X</label>
+                    <input type="radio" id="nought" name="symbol" value="O" required>
+                    <label for="nought" class="grey-text">O</label><br><br>
+                </div>
+                <div>
+                    <label for="difficulty">Difficulty</label>
+                    <input type="radio" id="easy" name="difficulty" value="easy" required>
+                    <label for="Easy" class="grey-text">Easy</label>
+                    <input type="radio" id="medium" name="difficulty" value="medium" required>
+                    <label for="medium" class="grey-text">Medium</label>
+                    <input type="radio" id="hard" name="difficulty" value="hard" required>
+                    <label for="nought" class="grey-text">Hard</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn" id="submit-button">Submit</button>
+                    <button type="button" id="cancel-button">Close</button>
+                </div>
+            </form>
         </div>
-        <div id="userSymbolBox" class="playerBox">
-            Your Symbol
+        <div id ="page-container">
+                <div id="players-grid">
+                    <h2>Players</h2>
+                    <div id="user-name">
+                        User Name:
+                    </div>
+                    <div id="user-symbol">
+                        User Symbol
+                    </div>
+                    <div id="ai-name">
+                        Ai:
+                    </div>
+                    <div id="ai-symbol">
+                        Ai Symbol
+                    </div>
+                </div>
+                <div id="message-board-container">
+                    <h2>Messages:</h2>
+                    <div id="message-char"></div>
+                    <div id="message-board"></div>
+                </div>
+            <div id ="game-container"></div>
         </div>
-        <div id="compNameBox" class="playerBox">
-            Computer
-        </div>
-        <div id="compSymbolBox" class="playerBox">
-            Computer Symbol
-        </div>
-    </div>
-    <div id="messageBoard"></div>
-</div>
-<div id ="gameContainer">
-</div>
-</div>
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

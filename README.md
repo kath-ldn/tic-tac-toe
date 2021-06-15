@@ -15,7 +15,7 @@ This is V3.0 of a Tic Tac Toe game that I made for [The Odin Project: Javascript
     * Added basic mobile responsiveness (not widely tested)
     * Added 'medium' setting
 
-The V3.0 unbeatable AI is still based on the FCC tutorial, but I re-wrote it to suit the rest of my gameplay, and to further research and practice recursion. It's probably not as slick as the FCC one, but I understand it and have worked through it and modified line-by-line - which feels more important!
+The V3.0 unbeatable AI is still based on the FCC tutorial, but I re-wrote it to suit the rest of my gameplay, and to further research and practice recursion. It's probably not as slick as the FCC one, but I understand it and have worked through it line-by-line - which feels more important!
 
 ### Live Demo
 
